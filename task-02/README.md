@@ -10,4 +10,4 @@
   - [View Portfolio](https://swayam-agrahari.github.io/)
 
 - Blog:
-  - [Blog Post](https://swayam-agrahari.github.io/)
+  - [Blog Post](https://swayam-agrahari.github.io/blogs/markdown-syntax/)
