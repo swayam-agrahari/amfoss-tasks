@@ -1,13 +1,13 @@
 # Portfolio Links
 
-- Blog Repository (used for storing portfolio code):
+1. Blog Repository (used for storing portfolio code):
   - [Blog Repo](https://github.com/swayam-agrahari/blog)
 
--   swayam-agrahari.github.io (used for deploying portfolio):
+  2.  swayam-agrahari.github.io (used for deploying portfolio):
   - [swayam-agrahari.github.io](https://github.com/swayam-agrahari/swayam-agrahari.github.io)
 
-- Live Portfolio:
+3. Live Portfolio:
   - [View Portfolio](https://swayam-agrahari.github.io/)
 
-- Blog:
+ 4. Blog:
   - [Blog Post](https://swayam-agrahari.github.io/blogs/markdown-syntax/)
