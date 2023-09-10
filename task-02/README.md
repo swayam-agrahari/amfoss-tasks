@@ -3,7 +3,7 @@
 - Blog Repository (used for storing portfolio code):
   - [Blog Repo](https://github.com/swayam-agrahari/blog)
 
-- Repository for deploying your portfolio:
+-   swayam-agrahari.github.io (used for deploying portfolio):
   - [swayam-agrahari.github.io](https://github.com/swayam-agrahari/swayam-agrahari.github.io)
 
 - Live Portfolio:
