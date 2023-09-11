@@ -1,0 +1,134 @@
+body {
+    width: 400px;
+    height: 400px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    background: rgba(250, 250, 250, 0.85);
+    background-image: url('./images/weather-background.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    animation: backgroundAnimation 20s linear infinite alternate;
+
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+p {
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+sup {
+    font-size: 0.7em;
+}
+
+#icon {
+    width: 100px;
+    height: 100px;
+}
+
+.location {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.location span {
+    font-size: 1.7em;
+}
+
+.location sup {
+    height: 1.2em;
+    padding: 0.2em 0.6em;
+    margin-left: 0.2em;
+    border-radius: 30px;
+    color: #fff;
+    background: #00c3ff;
+}
+
+
+.temp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Center align temperature and icon */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #1e2432;
+    text-align: center;
+    transition: color 0.3s ease;
+    /* Added color transition */
+}
+
+.temp:hover {
+    color: #ff9900;
+}
+
+.temp img {
+    margin-left: 10px;
+    /* Add margin between temperature and icon */
+}
+
+.temp_feel_like {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* Center align "Feels like" text and value */
+    font-size: 1.5rem;
+    margin-top: 5px;
+    color: #1e2432;
+    text-align: center;
+}
+
+
+
+/* Styling for the input container */
+.input-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#cityInput {
+    flex-grow: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 20px 0 0 20px;
+    outline: none;
+    font-size: 1rem;
+}
+
+#cityInput::placeholder {
+    color: #aaa;
+}
+
+#getWeatherButton {
+    background: #ff9900;
+    border: none;
+    border-radius: 0 20px 20px 0;
+    padding: 10px 20px;
+    cursor: pointer;
+    outline: none;
+    font-size: 1rem;
+    color: white;
+}
+
+#getWeatherButton:hover {
+    background: #ff6600;
+}
