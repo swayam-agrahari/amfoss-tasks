@@ -1,6 +1,6 @@
 # Sky Spy - Your Sky Our Spy
 
-![Your Logo](images/logo.png)
+![Your Logo](images/icon128.jpg)
 
 ## Overview
 "Sky Spy" is a Chrome extension that provides real-time weather information for a given location entered by the user. Users can view the current weather conditions, temperature, and more for their current location or any other city they search for. This project is built using HTML, CSS, JavaScript, and integrates with the OpenWeatherMap API to fetch weather data.
