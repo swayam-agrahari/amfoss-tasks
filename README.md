@@ -35,6 +35,6 @@ task-09|GeoQuest|Not attempted
 task-10|RuskOS|Not attempted
 task-11|TinkerCAD|Not attempted
 task-12|Godot|Not attempted
-[task-08](https://github.com/swayam-agrahari/amfoss-tasks/tree/master/task-13)|Internet Explorer|Completed
+[task-13](https://github.com/swayam-agrahari/amfoss-tasks/tree/master/task-13)|Vim|Completed
 [task-14](https://github.com/swayam-agrahari/amfoss-tasks/tree/master/task-14)|Bandit|Completed
 [task-15](https://github.com/swayam-agrahari/amfoss-tasks/tree/master/task-15)|Project Euler|Completed
