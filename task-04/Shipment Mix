@@ -1,0 +1,32 @@
+for _ in range(int(input())):
+    n = int(input())
+   
+    shipment = list(map(int, input().split()))
+
+
+    subset_a = []
+    subset_b = []
+
+
+    shipment.sort(reverse=True)
+
+
+    for phone in shipment:
+        if phone not in subset_a:
+            subset_a.append(phone)
+        elif phone not in subset_b:
+            subset_b.append(phone)
+
+
+    snint_a = 0
+    while snint_a in subset_a:
+        snint_a += 1
+
+    snint_b = 0
+    while snint_b in subset_b:
+        snint_b += 1
+
+
+    print(snint_a + snint_b)
+
+

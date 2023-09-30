@@ -1,0 +1,14 @@
+n = int(input())
+Fi=0
+Fj=0
+Fk=0
+for _ in range(n):
+    i, j, k = map(int, input().split())
+    Fi =Fi + i
+    Fj =Fj + j
+    Fk =Fk + k
+
+if (Fi==0 ) and (Fj==0) and (Fk==0):
+    print("YES")
+else:
+    print("NO")

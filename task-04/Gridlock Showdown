@@ -1,0 +1,46 @@
+for i in range(int(input())):
+    str1 = input()
+    str2 = input()
+    str3 = input()
+
+    def diagonal(str1,str2,str3):
+       if(str1[0]== str2[1] and str1[0]==str3[2]):
+          return str1[0]
+       elif(str1[2]== str2[1] and str1[2]==str3[0]):
+          return str1[2]
+       else:
+          return False
+
+
+    def horizontal(str1,str2,str3):
+       if(str1[0]== str1[1] and str1[0]==str1[2]):
+          return str1[0]
+       elif(str2[0]== str2[1] and str2[0]==str2[2]):
+          return str2[0]
+       elif(str3[0]== str3[1] and str3[0]==str3[2]):
+          return str3[0]
+       else:
+          return False
+
+    def vertical(str1,str2,str3):
+       if(str1[0]== str2[0] and str1[0]==str3[0]):
+          return str1[0]
+       elif(str1[1]== str2[1] and str1[1]==str3[1]):
+          return str1[1]
+       elif(str1[2]== str2[2] and str1[2]==str3[2]):
+          return str1[2]
+       else:
+          return False
+    d_ans= diagonal(str1,str2,str3)
+    h_ans= horizontal(str1,str2,str3)
+    v_ans= vertical(str1,str2,str3)
+
+    if(d_ans):
+       print(d_ans)
+    elif(h_ans):
+       print(h_ans)
+    elif(v_ans):
+       print(v_ans)
+
+    else:
+       print("DRAW")
