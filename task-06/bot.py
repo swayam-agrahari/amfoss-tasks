@@ -1,20 +1,15 @@
 import discord
-import os
-from dotenv import load_dotenv
 from scraper import get_cricket_data
 import csv
 
-# Load environment variables
-load_dotenv()
-TOKEN = 'MTE1NjI0ODUxODA4MDU5ODEyOA.GX_JHw.CdBu43HXTfgZ8Sx-m2uVsoCLmJhOvlg1ZS6vTU'
+
+TOKEN = 'MTE1NjI0ODUxODA4MDU5ODEyOA.GqegG2.n-ZNo9BmNeoA3bDA8-Cm9WjgOBmNj46MU1wq40'
 
 # Define the intents for your bot
 intents = discord.Intents.all()
-# intents.typing = True
-# intents.presences = False
 intents.message_content = True
 
-# Create a Discord client with intents
+# Create a Discord client with intents0
 client = discord.Client(intents=intents)
 
 # List to store live scores data
@@ -23,6 +18,7 @@ live_scores_data = []
 @client.event
 async def on_ready():
     print(f'We have logged in as {client.user}')
+
 @client.event
 async def on_message(message):
     if message.author == client.user:
@@ -55,7 +51,7 @@ async def on_message(message):
     /generate    : Generate a CSV file with live scores.
     /help        : Show this help message.
     """
-
+        await message.channel.send(help_message)
 
 def generate_live_scores_csv():
     # Get live cricket data using your scraper function
@@ -68,5 +64,6 @@ def generate_live_scores_csv():
         with open('live_scores.csv', 'a', newline='') as file:
             writer = csv.writer(file)
             writer.writerow([formatted_data])
+
 # Run the bot
 client.run(TOKEN)
