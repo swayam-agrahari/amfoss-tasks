@@ -22,10 +22,18 @@ def get_cricket_data():
 
         if specific_div:
             # Extract team names
-            team_names = specific_div.find_all('p', class_='ds-text-tight-m ds-font-bold ds-capitalize ds-truncate')
-            if len(team_names) == 2:
-                team1 = team_names[0].text.strip()
-                team2 = team_names[1].text.strip()
+            team_names_div = specific_div.find_all('div', class_='ci-team-score ds-flex ds-justify-between ds-items-center ds-text-typo ds-my-1')
+            
+            if len(team_names_div) == 2:
+                # Team 1
+                team1_elem = team_names_div[0].find('div', class_='ds-flex ds-items-center ds-min-w-0 ds-mr-1')
+                if team1_elem:
+                    team1 = team1_elem.find('p', class_='ds-text-tight-m ds-font-bold ds-capitalize ds-truncate !ds-text-typo-mid3').text.strip()
+
+                # Team 2
+                team2_elem = team_names_div[1].find('div', class_='ds-flex ds-items-center ds-min-w-0 ds-mr-1')
+                if team2_elem:
+                    team2 = team2_elem.find('p', class_='ds-text-tight-m ds-font-bold ds-capitalize ds-truncate').text.strip()
 
             # Extract status
             status_elem = specific_div.find('p', class_='ds-text-tight-s ds-font-regular ds-truncate ds-text-typo')
