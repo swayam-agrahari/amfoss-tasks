@@ -28,13 +28,13 @@ defmodule PrimeNumbers do
     find_primes(i + 1, n)
   end
 
-  defp is_prime(n, 2) when n rem 2 == 0, do: false
+  defp is_prime(2,2), do: true
+  defp is_prime(n, 2) when rem(n,2) == 0, do: false
   defp is_prime(n, i) when i * i > n, do: true
-  defp is_prime(n, i) when n rem i == 0, do: false
+  defp is_prime(n, i) when rem(n,i) == 0, do: false
   defp is_prime(n, i) do
     is_prime(n, i + 1)
   end
 end
 
 PrimeNumbers.main()
-
